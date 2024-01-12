@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Risk Search Results</title>
+</head>
+<body>
+<h1>Risk Search Results</h1>
+<ul>
+{% for risk in risks %}
+<li>
+<h2>{{ risk.title }}</h2>
+<p>{{ risk.description }}</p>
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
